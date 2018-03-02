@@ -1,4 +1,4 @@
-# Clone and Modified from [cnnvisualizer](./https://github.com/metalbubble/cnnvisualizer)
+# Clone and Modified from [cnnvisualizer](https://github.com/metalbubble/cnnvisualizer)
 
 * Delete all MATLAB files.
 * Run [main.py](./main.py) to train and save models.
