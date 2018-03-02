@@ -1,3 +1,9 @@
+# Clone and Modified from [cnnvisualizer](./https://github.com/metalbubble/cnnvisualizer)
+
+* Delete all MATLAB files.
+* Run [main.py](./main.py) to train and save models.
+* run [pytorch_generate_unitsegments.py](./pytorch_generate_unitsegments.py) to visualize units.
+
 # CNN Visualizer: Toolkit for Visualizing Units in Deep Convolutional Neural Networks
 
 ## Introduction
@@ -6,7 +12,7 @@ This repository contains the codes and results for visualizing the units (or nam
 (NEW!) PyTorch script:
 
 * ```pytorch_extract_feature.py```: code to extract the CNN features at the selected layers of a CNN model for any given images.
-* ```pytorch_generate_unitsegments.py```: code to generate the visualization of all the units at the selected layer. 
+* ```pytorch_generate_unitsegments.py```: code to generate the visualization of all the units at the selected layer.
 
 Matlab script:
 
@@ -27,7 +33,7 @@ Matlab script:
 ```
     sh download_images.sh
     sh download_pretrain.sh
-``` 
+```
 
 ## Run
 Properly set up the caffe path in the shell scripts, matlab scripts, and python scripts. We show the procedure to probe the unit semantics for alexnet trained on Places205 as follows:
@@ -39,7 +45,7 @@ Properly set up the caffe path in the shell scripts, matlab scripts, and python 
 Samples of unit segmentation are shown below. Each row indicates the images segmented by the receptive field of one unit.
 ![segmentation](http://places.csail.mit.edu/unit_annotation/images/unitsegmentation_new.png)
 
-* Generate the minimal image. 
+* Generate the minimal image.
 ```
     cd minimal_image
     matlab -nodisplay -r demo_bases
