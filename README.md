@@ -1,8 +1,9 @@
 # Clone and Modified from [cnnvisualizer](https://github.com/metalbubble/cnnvisualizer)
 
+* [main.py](./main.py) and [config.py](./config.py) was borrowed from [fine-tuning.pytorch](https://github.com/meliketoy/fine-tuning.pytorch)
 * Delete all MATLAB files.
 * Run [main.py](./main.py) to train and save models.
-* run [pytorch_generate_unitsegments.py](./pytorch_generate_unitsegments.py) to visualize units.
+* Run [pytorch_generate_unitsegments.py](./pytorch_generate_unitsegments.py) to visualize units.
 
 # CNN Visualizer: Toolkit for Visualizing Units in Deep Convolutional Neural Networks
 

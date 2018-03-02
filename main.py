@@ -14,7 +14,6 @@ from __future__ import division, print_function
 import argparse
 import copy
 import os
-import shutil
 import sys
 import time
 
@@ -23,9 +22,8 @@ import torch
 import torch.backends.cudnn as cudnn
 import torch.nn as nn
 import torch.optim as optim
-import torchvision
 from torch.autograd import Variable
-from torchvision import datasets, models, transforms
+from torchvision import models, transforms
 
 import config as cf
 from networks import *
@@ -231,7 +229,6 @@ def train_model(model, criterion, optimizer, lr_scheduler, num_epochs=cf.num_epo
           save_point = './checkpoint/'+dataset_dir
           if not os.path.isdir(save_point):
             os.mkdir(save_point)
-        #   torch.save(state, save_point+file_name+'.t7')
 
           torch.save(best_model.state_dict(), 'best_model.pth.tar')
 
